@@ -12,4 +12,55 @@ html {
 
 body {
   background: $blue;
+  color: #fff;
+  font-family: Roboto, sans-serif;
+  min-height: 100vh;
+  font-weight: 500;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.counter{
+  height: 280px;
+  width: 280px;
+  background: url(/assets/img/water-glass.svg) center center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:#000;
+  font-size: 112px;
+  &__value{
+    display: block;
+    padding-top: 64px;
+  }
+}
+
+.btn-add{
+  min-width: 216px;
+  display: block;
+  margin: 48px 0 24px;
+  line-height: 21px;
+  font-size: 18px;
+  padding: 12px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  border: none;
+}
+
+.btn-remove{
+  min-width: 216px;
+  font-size: 14px;
+  padding: 12px;
+  background: none;
+  border: none;
+  color: #F5E5E7;
 }
